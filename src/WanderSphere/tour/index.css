@@ -1,0 +1,28 @@
+#tourContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 3vh;
+}
+#cards {
+  padding-top: 4vh;
+}
+#destinationContainer {
+  display: flex;
+  flex-direction: column;
+}
+#background {
+  height: 100vh;
+  background-size: cover;
+}
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 8vw;
+  padding-top: 12vh;
+  color: white;
+  width: 70vw;
+}

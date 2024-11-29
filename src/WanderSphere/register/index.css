@@ -1,0 +1,16 @@
+#container {
+  background-color: rgb(255, 187, 128);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#form {
+  display: flex;
+  background-color: pink;
+}
+#left {
+}
+#right {
+}

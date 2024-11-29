@@ -1,0 +1,61 @@
+.headerContainer {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: "2vh";
+}
+.header4links {
+  list-style: none;
+  justify-content: space-between;
+  display: flex;
+  justify-content: center;
+  font-size: clamp(10px, 2vw, 14px);
+}
+#logo {
+  display: flex;
+  justify-content: center;
+}
+#wandersphereLogo {
+  font-size: clamp(10px, 2vw, 14px);
+  font-weight: "700";
+}
+#bigAds {
+  display: flex;
+  align-items: center;
+  padding-left: 7vw;
+  height: 45vw;
+  width: 100vw;
+  background-image: url("../../../public/pictures/map.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: right -10px top 10px;
+}
+body {
+  overflow-x: hidden; /* 禁用水平滚动 */
+}
+#paddingFramework {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+#recommendation {
+  display: flex;
+}
+#threeCards {
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(14px, 1vw, 16px);
+}
+#Features {
+  display: flex;
+}
+.cardShadow:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+#sixCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
