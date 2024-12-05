@@ -1,0 +1,48 @@
+.navBar {
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid lightgray;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    span {
+      color: rgb(229, 151, 104);
+      font-weight: 700;
+    }
+    .search {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid lightgray;
+      border-radius: 5px;
+      padding: 5px;
+      input {
+        border: none;
+        width: 500px;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 500;
+    .user {
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      span {
+        margin: 0px 10px;
+      }
+    }
+  }
+}

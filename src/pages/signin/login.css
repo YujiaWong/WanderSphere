@@ -1,0 +1,89 @@
+.login {
+  height: 100vh;
+  background-color: rgb(229, 151, 104);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  overflow: hidden;
+}
+
+.cardSignin {
+  width: 50vw;
+  display: flex;
+  height: 80vh;
+  flex-direction: row-reverse;
+  background-color: white;
+  border-radius: 10px;
+  min-height: 500px;
+  min-width: 280px;
+  overflow: hidden;
+}
+
+.signinleft {
+  width: 50%;
+  flex: 1;
+  background: linear-gradient(rgb(229, 151, 104, 0.5), rgb(229, 151, 104, 0.5)),
+    url("https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600")
+      center;
+  background-size: cover;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+}
+
+.signinleft h1 {
+  font-size: 80px;
+  line-height: 80px;
+}
+
+.signinleft span {
+  font-size: 14px;
+}
+
+.signinleft button {
+  padding: 10px;
+  border: none;
+  background-color: white;
+  color: rgb(229, 151, 104);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.signinright {
+  width: 50%;
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+}
+
+.signinright h1 {
+  color: #555;
+}
+
+.signinright form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.signinright form input {
+  border: none;
+  border-bottom: 1px solid lightgray;
+  padding: 20px 10px;
+}
+
+.signinright form button {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  background-color: rgb(229, 151, 104);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}

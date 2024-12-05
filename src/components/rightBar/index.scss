@@ -1,0 +1,73 @@
+.rightBar {
+  font-size: 14px;
+  flex: 3;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .container {
+    padding: 20px;
+    .item {
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+      -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+      box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+      span {
+        color: black;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0px;
+        .userInfo {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          position: relative;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          .online {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: limegreen;
+            position: absolute;
+            top: 0px;
+            left: 30px;
+          }
+          span {
+            font-weight: 500;
+          }
+        }
+        .buttons {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          button {
+            border: none;
+            padding: 5px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+            &:first-child {
+              background-color: rgb(229, 151, 104);
+            }
+            &:last-child {
+              background-color: rgb(100, 152, 230);
+            }
+          }
+        }
+      }
+    }
+  }
+}

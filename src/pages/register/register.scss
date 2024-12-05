@@ -1,0 +1,108 @@
+.register {
+  height: 100vh;
+  background-color: rgb(229, 151, 104);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+
+  .card {
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 500px;
+    min-width: 280px;
+    overflow: hidden;
+
+    .right {
+      flex: 1;
+      background: linear-gradient(
+          rgba(229, 151, 104, 0.6),
+          rgba(229, 151, 104, 0.6)
+        ),
+        url("https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg?auto=compress&cs=tinysrgb&w=1600")
+          center;
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      color: white;
+
+      h1 {
+        font-size: 100px;
+        line-height: 100px;
+      }
+
+      p {
+      }
+
+      span {
+        font-size: 14px;
+      }
+
+      button {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        background-color: white;
+        color: rgb(229, 151, 104);
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+
+    .left {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      justify-content: center;
+
+      h1 {
+        color: #555;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 20px 10px;
+        }
+
+        button {
+          width: 50%;
+          padding: 10px;
+          border: none;
+          background-color: rgb(229, 151, 104);
+          color: white;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* 屏幕小于 768px 时只显示 .left */
+@media (max-width: 767px) {
+  .card {
+    flex-direction: column; /* 防止布局混乱 */
+  }
+
+  .left {
+    display: flex; /* 确保左侧可见 */
+  }
+
+  .right {
+    display: none; /* 隐藏右侧 */
+  }
+}
