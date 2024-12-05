@@ -1,3 +1,5 @@
+@import "../../pages/blog/index.scss";
+
 .navBar {
   z-index: 999;
   display: flex;
@@ -25,6 +27,12 @@
       input {
         border: none;
         width: 500px;
+        @include mobile {
+          display: none;
+        }
+        @include tablet {
+          width: 200px;
+        }
       }
     }
   }
@@ -33,7 +41,17 @@
     align-items: center;
     gap: 20px;
     font-weight: 500;
+    @include mobile {
+      display: none;
+    }
     .user {
+      display: flex;
+      align-items: center;
+      gap: 10;
+      @include tablet {
+        display: none;
+      }
+
       img {
         width: 30px;
         height: 30px;

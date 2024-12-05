@@ -1,3 +1,5 @@
+@import "../blog/index.scss";
+
 .profile {
   .image {
     width: 100%;
@@ -21,6 +23,9 @@
   }
   .profileContainer {
     padding: 20px 70px;
+    @include mobile {
+      padding: 10px;
+    }
 
     .userInfo {
       height: 180px;
@@ -30,6 +35,54 @@
       -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
       -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
       box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+
+      @include mobile {
+        flex-direction: column;
+        height: 30vh;
+        padding: 12px;
+        margin-top: 100px;
+      }
+      .left {
+        flex: 1;
+        display: flex;
+        gap: 20px;
+      }
+      .center {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding-top: 30px;
+        span {
+          font-size: 30px;
+          font-weight: 500;
+        }
+        .info {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 100%;
+          span {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+        button {
+          border: none;
+          border-radius: 5px;
+          background-color: orangered;
+          color: white;
+          padding: 0px 5px;
+        }
+      }
+      .right {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 10px;
+      }
     }
   }
 }

@@ -6,6 +6,7 @@ import { MdOutlinePlace } from "react-icons/md";
 import { IoLanguageOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { MdPhoneAndroid } from "react-icons/md";
+import Posts from "../../components/posts";
 
 export default function Profile() {
   return (
@@ -33,7 +34,7 @@ export default function Profile() {
             </a>
           </div>
           <div className="center">
-            <span>sunxiaochuan</span>
+            <span>kayle</span>
             <div className="info">
               <div className="item">
                 <MdOutlinePlace />
@@ -52,6 +53,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      <Posts />
     </div>
   );
 }

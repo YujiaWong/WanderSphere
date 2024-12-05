@@ -15,11 +15,12 @@ export default function Posts() {
     },
     {
       id: 2,
-      name: "john2",
+      name: "vivian",
       userId: 2,
       profileImg:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTVEHIRD6Xn_KNaud4rPrVUT397HohLueaOQ&s",
-      desc: "111",
+        "https://imgcdn.stablediffusionweb.com/2024/5/15/d12adb3e-ae31-4cc5-a659-5fc8375dc635.jpg",
+      desc: "Beautiful!",
+      img: "https://koddi.com/wp-content/uploads/2020/01/Understanding-Solo-Travelers-974x511.jpg",
     },
   ];
   return (
