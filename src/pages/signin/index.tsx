@@ -5,31 +5,28 @@ import Header from "../home/components/header";
 import { AuthContext } from "../../context/authContext";
 
 const Signin = () => {
-  // const [inputs, setInputs] = useState({
-  //   username: "",
-  //   password: "",
-  // });
-  // const [err, setErr] = useState(null);
+  const [inputs, setInputs] = useState({
+    username: "",
+    password: "",
+  });
+  const [err, setErr] = useState(null);
 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
-  // const handleChange = (e: any) => {
-  //   setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  // };
-  const { login } = useContext(AuthContext);
-  const handleLogin = () => {
-    login();
+  const handleChange = (e: any) => {
+    setInputs((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
+  const { login } = useContext(AuthContext);
 
-  // const handleLogin = async (e: any) => {
-  //   e.preventDefault();
-  //   try {
-  //     await login(inputs);
-  //     navigate("/");
-  //   } catch (err: any) {
-  //     setErr(err.response.data);
-  //   }
-  // };
+  const handleLogin = async (e: any) => {
+    e.preventDefault();
+    try {
+      await login(inputs);
+      navigate("/blog/home");
+    } catch (err: any) {
+      setErr(err.response.data);
+    }
+  };
 
   return (
     <div style={{ backgroundColor: "rgb(229, 151, 104)" }}>
@@ -57,15 +54,15 @@ const Signin = () => {
                 type="text"
                 placeholder="Username"
                 name="username"
-                // onChange={handleChange}
+                onChange={handleChange}
               />
               <input
                 type="password"
                 placeholder="Password"
                 name="password"
-                //onChange={handleChange}
+                onChange={handleChange}
               />
-              {/* {err && err} */}
+              {err && err}
               <button onClick={handleLogin}>Log in</button>
             </form>
           </div>

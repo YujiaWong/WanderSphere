@@ -21,7 +21,7 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:8800/api/auth/register", inputs);
+      await axios.post("http://localhost:4000/api/auth/register", inputs);
     } catch (err: any) {
       setErr(err.response.data);
     }
@@ -61,7 +61,9 @@ const Register = () => {
                 name="name"
                 onChange={handleChange}
               />
-              {err && err}
+
+              {err && <div style={{ color: "red" }}>{err}</div>}
+
               <button onClick={handleClick}>Register</button>
             </form>
           </div>

@@ -6,6 +6,7 @@ import { IoSearch } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
 import { FaRegBell } from "react-icons/fa6";
+import { CiCloudSun } from "react-icons/ci";
 import { Link } from "react-router";
 import { AuthContext } from "../../context/authContext";
 
@@ -22,8 +23,11 @@ export default function NavBar() {
 
         <AiOutlineAppstore />
         <div className="search">
-          <IoSearch />
-          <input type="text" placeholder="search for something" />{" "}
+          <CiCloudSun />
+          <input
+            type="text"
+            placeholder="search for destination's weather"
+          />{" "}
         </div>
       </div>
       <div className="right">

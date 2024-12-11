@@ -30,8 +30,8 @@ export default function Stories() {
   return (
     <div className="stories">
       <div className="story">
-        <img src={currentUser.profileImg} alt="." />
-        <span>{currentUser.userName}</span>
+        <img src={currentUser.profilePic} alt="." />
+        <span>{currentUser.username}</span>
         <button>+</button>
       </div>
       {stories.map((story) => (
