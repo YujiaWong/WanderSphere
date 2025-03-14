@@ -13,6 +13,7 @@ import { FaInternetExplorer } from "react-icons/fa";
 import { GiPear } from "react-icons/gi";
 import * as db from "../database";
 import { Link, useNavigate } from "react-router";
+import AIChatBot from '../../components/aiChatBot';
 
 export default function Home() {
   const sixCards = db.Desinations.slice(0, 6);
@@ -118,6 +119,7 @@ export default function Home() {
         </div>
       </div>
       {/* -------------------------bigAds END--------------------- */}
+      <AIChatBot/>
       <div id="paddingFramework">
         {/* ------------------recommendation START------------------ */}
         <div id="recommendation">

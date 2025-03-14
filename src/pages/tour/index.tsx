@@ -8,7 +8,7 @@ import * as db from "../database";
 export default function Tour() {
   const destinations = db.Desinations;
   const navigate = useNavigate();
-  // ✅ 2. 添加分页逻辑
+  // 分页
   const [currentPage, setCurrentPage] = useState(1); // 当前页
   const itemsPerPage = 20; // 每页显示20条数据
 
@@ -52,10 +52,10 @@ export default function Tour() {
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="cards">
           {paginatedDestinations.map(
             (
-              d // ✅ 3. 替换 destinations 为 paginatedDestinations
+              d // 替换 destinations 为 paginatedDestinations
             ) => (
               <div
-                key={d.title} // ✅ 4. 添加 key，确保每个卡片唯一
+                key={d.title} // 添加 key，确保每个卡片唯一
                 className="cardShadow border p-2 mb-4 rounded-4 m-3"
                 style={{ transition: "box-shadow 0.5s ease", width: "300px" }}
               >
@@ -110,7 +110,7 @@ export default function Tour() {
             )
           )}
         </div>
-        {/* ✅ 5. 添加分页按钮 */}
+        {/* 分页按钮 */}
         <div style={{ textAlign: "center", marginTop: "20px" }}>
           {Array.from(
             { length: totalPages },
@@ -135,12 +135,12 @@ export default function Tour() {
       {/* ----------------------footer --------------------------- */}
       <div id="footer">
         <div>
-          Email: wang.yujia5@northeastern.edu <br />
-          Phone: +1 (408) 382-9900 <br />
+          Email: group8@northeastern.edu <br />
+          Phone: +1 (408) 382-1234 <br />
           1234 Happy Street, San Jose,CA, USA
           <br />
           <br />
-          © 2024 WanderSphere Lot.d. Designed by Yujia Wang. <br />
+          © 2024 WanderSphere Lot.d. Designed by Group8. <br />
         </div>
         <h5>
           Exploration&nbsp; &nbsp;&nbsp;Culture&nbsp;&nbsp;&nbsp; Adventure

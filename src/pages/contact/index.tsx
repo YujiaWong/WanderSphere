@@ -49,7 +49,7 @@ export default function Contact() {
               Monday to Sunday: 10:00 AM - 8:00 PM
             </div>
             <div className="col " style={{ paddingRight: "2px" }}>
-              Email: wang.yujia5@northeastern.com
+              Email: group8@northeastern.com
               <br /> Fax: +1 (408) 382-1234 <br />
               Phone: +1 (408) 382-1234
             </div>

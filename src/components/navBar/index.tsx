@@ -35,8 +35,8 @@ export default function NavBar() {
         <MdOutlineMail />
         <FaRegBell />
         <div className="user">
-          <img src={currentUser.profileImg} alt=".." />
-          <span>{currentUser.userName}</span>
+          <img src={currentUser.profilePic} alt=".." />
+          <span>{currentUser.username}</span>
         </div>
       </div>
     </div>

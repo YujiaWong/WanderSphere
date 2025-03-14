@@ -38,11 +38,11 @@ export default function Header() {
             TOUR
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link className="text-dark text-decoration-none mx-4" to="/blog">
-            BLOG
+            BLOG11
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link className="text-dark text-decoration-none mx-4" to="/contact">
             CONTACT
