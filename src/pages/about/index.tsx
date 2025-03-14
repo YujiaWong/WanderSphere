@@ -337,12 +337,12 @@ export default function About() {
 
       <div id="footer">
         <div>
-          Email: wang.yujia5@northeastern.edu <br />
-          Phone: +1 (408) 382-9900 <br />
+          Email: group8@northeastern.edu <br />
+          Phone: +1 (408) 382-1234 <br />
           1234 Happy Street, San Jose,CA, USA
           <br />
           <br />
-          © 2024 WanderSphere Lot.d. Designed by Yujia Wang. <br />
+          © 2024 WanderSphere Lot.d. Designed by group8. <br />
         </div>
         <h5>
           Exploration&nbsp; &nbsp;&nbsp;Culture&nbsp;&nbsp;&nbsp; Adventure
